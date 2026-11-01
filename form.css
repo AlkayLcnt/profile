@@ -487,10 +487,6 @@ h1 sup {
     min-height: 530px;
 }
 
-#ons-template {
-    min-height: 580px;
-}
-
 .closing-note {
     display: flex;
     align-items: center;
@@ -530,6 +526,12 @@ h1 sup {
 
 .site-footer > a:not(.wordmark):hover {
     color: var(--warm);
+}
+
+@media (min-width: 761px) {
+    .form-contact-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 760px) {
@@ -699,8 +701,7 @@ h1 sup {
     }
 
     .form-template,
-    #phone-template,
-    #ons-template {
+    #phone-template {
         min-height: 440px;
         padding: 15px;
         font-size: 10px;
@@ -708,10 +709,6 @@ h1 sup {
 
     #phone-template {
         min-height: 500px;
-    }
-
-    #ons-template {
-        min-height: 550px;
     }
 
     .closing-note {

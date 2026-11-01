@@ -355,13 +355,6 @@ h1 sup {
     line-height: 1.9;
 }
 
-.package-featured {
-    grid-column: span 2;
-    background:
-        radial-gradient(ellipse at 92% 5%, rgba(196, 128, 100, 0.14), transparent 50%),
-        var(--glass);
-}
-
 .rates-section + .rates-section {
     padding-top: 100px;
 }
@@ -497,10 +490,6 @@ h1 sup {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
-
-    .package-featured {
-        grid-column: span 2;
-    }
 }
 
 @media (max-width: 540px) {
@@ -600,8 +589,7 @@ h1 sup {
         padding-top: 20px;
     }
 
-    .package-card,
-    .package-featured {
+    .package-card {
         grid-column: auto;
         padding: 24px 22px;
     }
